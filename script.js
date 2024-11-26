@@ -11,10 +11,10 @@ const payments = [
     { name: "Althaf", place: "Cheruvannur", class: "Degree First", debt: 5, upiId: "muhammedasim711@oksbi" },
     { name: "Sahad", place: "Karulayi", class: "Degree First", debt: 5, upiId: "muhammedasim711@oksbi" },
     { name: "Ismayi", place: "Pullookkara", class: "Degree Final", debt: 15, upiId: "muhammedasim711@oksbi" },
-    { name: "Khader", place: "Mukkam", class: "Degree Final", debt: 140, upiId: "muhammedasim711@oksbi" },
+    { name: "Khader", place: "Mukkam", class: "Degree Final", debt: 142, upiId: "muhammedasim711@oksbi" },
     { name: "Ashkar", place: "Parakkadavu", class: "Degree Final", debt: 42, upiId: "muhammedasim711@oksbi" },
     { name: "Aslah", place: "Vanimal", class: "Degree Final", debt: 177, upiId: "muhammedasim711@oksbi" },
-    { name: "Muhammed NK", place: "Meppayyur", class: "Degree Final", debt: 20, upiId: "muhammedasim711@oksbi" },
+    { name: "Muhammed NK", place: "Meppayyur", class: "Degree Final", debt: 241, upiId: "muhammedasim711@oksbi" },
     { name: "Niyas", place: "Vellamunda", class: "Degree Final", debt: 143, upiId: "muhammedasim711@oksbi" },
     { name: "Muhammed VTK", place: "Cherandathur", class: "Degree Final", debt: 7, upiId: "muhammedasim711@oksbi" }
 ];
