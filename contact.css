@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    background: #e8f5e9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #388e3c;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  

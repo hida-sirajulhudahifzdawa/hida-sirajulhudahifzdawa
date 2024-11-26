@@ -1,0 +1,36 @@
+body {
+    font-family: Georgia, serif;
+    background: #f3e5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #7b1fa2;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
