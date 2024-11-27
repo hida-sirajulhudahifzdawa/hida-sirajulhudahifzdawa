@@ -1,282 +1,261 @@
 /* General Body Styling */
 body {
-    font-family: 'Anek Malayalam', sans-serif;
-    background: #fff0e5;
-    margin: 0;
-    padding: 0;
+  font-family: 'Anek Malayalam', sans-serif;
+  background: #fff0e5;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header Styling */
 header {
-    background: #388ea0;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: #388ea0;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logo img {
-    max-height: 50px;
+  max-height: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Anek Malayalam Regular';
+  padding-top: 50px;
+  line-height: 15px;
+}
+
+p {
+  text-align: center;
+  font-family: 'Anek Malayalam Light';
+  font-size: 18px;
+  line-height: 0px;
+}
+
+p1 {
+  color: #fcfcfc;
 }
 
 /* Navigation Menu */
 nav {
-    position: relative;
+  position: relative;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    font-size: 14px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    background: #0f6478;
-    border-radius: 5px;
-    transform: scale(1.05);
+  background: #0f6478;
+  border-radius: 5px;
+  transform: scale(1.05);
 }
 
 /* Hamburger Menu */
 .hamburger {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: white;
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
 }
 
 .hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 5px 0;
-    transition: 0.3s ease;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.3s ease;
 }
 
-    /* Styles for the navigation and header */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #f4f4f4;
-      border-bottom: 1px solid #ccc;
-    }
+  /* Styles for the navigation and header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1790ac;
+    border-bottom: 1px solid #ccc;
+  }
 
-    .logo img {
-      max-height: 50px;
-    }
+  .logo img {
+    max-height: 50px;
+  }
 
-    nav {
-      position: relative;
+  nav {
+    position: relative;
+  }
+
+  .menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
     }
 
     .menu {
+      display: flex;
+      flex-direction: column;
+      background-color: #f4f4f4;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 20px;
       display: none;
-      list-style: none;
-      margin: 0;
-      padding: 0;
     }
 
-    .menu li {
-      margin: 10px 0;
+    .menu.show {
+      display: block;
     }
-
-    .menu a {
-      text-decoration: none;
-      color: #333;
-    }
-
-    .hamburger {
-      display: none;
-      cursor: pointer;
-      font-size: 24px;
-    }
-
-    /* Responsive for smaller screens */
-    @media (max-width: 768px) {
-      .hamburger {
-        display: block;
-      }
-
-      .menu {
-        display: flex;
-        flex-direction: column;
-        background-color: #f4f4f4;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 10px 20px;
-        display: none;
-      }
-
-      .menu.show {
-        display: block;
-      }
-    }
+  }
 
 /* Responsive Menu */
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
+  .hamburger {
+      display: block;
+  }
 
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #388ea0;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
+  nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #388ea0;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
-    nav ul.show {
-        display: flex;
-    }
+  nav ul.show {
+      display: flex;
+  }
 
-    nav ul li {
-        margin: 5px 0;
-        text-align: center;
-    }
-}
-
-/* Main Content Styling */
-main {
-    padding: 15px;
-    text-align: center;
-}
-
-body {
-    font-family: Anek Malayalam, sans-serif;
-    margin: 10px;
-    padding: 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f9f9f9;
-}
-
-.hida-container {
-    text-align: center;
-}
-
-.hida-container h1 {
-    margin: 0;
-    font-size: 10px;
-    font-weight: normal;
-}
-
-.hida-container h1 .hida-bold {
-    font-weight: bold;
-}
-
-.hida-container p {
-    margin: 0;
-    font-size: 6px;
-    font-weight: lighter;
-    color: #555;
+  nav ul li {
+      margin: 5px 0;
+      text-align: center;
+  }
 }
 
 /* Footer Styling */
 footer {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 12px;
-    color: #555;
-    padding: 15px 10px;
-    background-color: #f1f1f1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+  padding: 15px 10px;
+  background-color: #388ea0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Social Media Icons */
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
 }
 
 .social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    background-color: #fcfcfc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #fcfcfc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon img {
-    width: 25px;
-    height: 25px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 /* Hover Effects for Icons */
 .social-icon.instagram:hover {
-    background-color: #9b004d; /* Instagram Pink */
+  background-color: #9b004d; /* Instagram Pink */
 }
 
 .social-icon.youtube:hover {
-    background-color: #d80000; /* YouTube Red */
+  background-color: #d80000; /* YouTube Red */
 }
 
 .social-icon.whatsapp:hover {
-    background-color: #00b643; /* WhatsApp Green */
+  background-color: #00b643; /* WhatsApp Green */
 }
 
 .social-icon.facebook:hover {
-    background-color: #0060dd; /* Facebook Blue */
+  background-color: #0060dd; /* Facebook Blue */
 }
 
 .social-icon:hover img {
-    transform: scale(1.2); /* Slight zoom effect */
+  transform: scale(1.2); /* Slight zoom effect */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 480px) {
-    nav ul li a {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
+  nav ul li a {
+      font-size: 12px;
+      padding: 6px 10px;
+  }
 
-    footer {
-        font-size: 10px;
-        padding: 10px 5px;
-    }
+  footer {
+      font-size: 10px;
+      padding: 10px 5px;
+  }
 
-    .social-icon {
-        width: 30px;
-        height: 30px;
-    }
+  .social-icon {
+      width: 30px;
+      height: 30px;
+  }
 
-    .social-icon img {
-        width: 18px;
-        height: 18px;
-    }
+  .social-icon img {
+      width: 18px;
+      height: 18px;
+  }
 }
