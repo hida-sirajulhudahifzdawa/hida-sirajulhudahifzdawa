@@ -1,6 +1,6 @@
 /* Body Styling */
 body {
-    font-family: 'Anek Malayalam Light', sans-serif;
+    font-family: 'Anek Malayalam', sans-serif;
     background: linear-gradient(135deg, #ffffff, #ebebeb);
     margin: 50px;
     padding: 0;
@@ -23,9 +23,10 @@ footer {
     text-align: center;
     font-size: 14px;
     color: #555;
-    padding: 20px 800px;
+    padding: 20px;
+    padding-right: 860px;
+    padding-left: 860px;
     background-color: #f1f1f1;
-    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -88,19 +89,19 @@ footer {
 
 /* Specific Icons */
 .instagram {
-    background-color: #3a3a3a;
+    background-color: #fcfcfc;
 }
 
 .youtube {
-    background-color: #3a3a3a;
+    background-color: #fcfcfc;
 }
 
 .whatsapp {
-    background-color: #3a3a3a;
+    background-color: #fcfcfc;
 }
 
 .facebook {
-    background-color: #3a3a3a;
+    background-color: #fcfcfc;
 }
 
 /* Prevent horizontal overflow */
@@ -224,9 +225,8 @@ footer {
     text-align: center;
     font-size: 12px; /* Smaller font for mobile */
     color: #555;
-    padding: 20px 800px;
+    padding: ;
     background-color: #f1f1f1;
-    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -410,7 +410,7 @@ body {
     background: #00aa39;
     color: white;
     text-align: center;
-    padding: 15px 95px;
+    padding: 10px 578px;
   }
   
   nav ul {
