@@ -6,7 +6,7 @@ body {
   }
   
   header {
-    background: #388ea0;
+    background: #9336B4;
     color: white;
     padding: 10px 0;
   }
@@ -17,9 +17,8 @@ footer {
     text-align: center;
     font-size: 14px;
     color: #555;
-    padding: 20px 800px;
+    padding: 20px 850px;
     background-color: #f1f1f1;
-    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -82,19 +81,19 @@ footer {
 
 /* Specific Icons */
 .instagram {
-    background-color: #3a3a3a;
+    background-color: #fcfcfc;
 }
 
 .youtube {
-    background-color: #3a3a3a;
+    background-color: #fcfcfc;
 }
 
 .whatsapp {
-    background-color: #3a3a3a;
+    background-color: #fcfcfc;
 }
 
 .facebook {
-    background-color: #3a3a3a;
+    background-color: #fcfcfc;
 }
 
   nav ul {
@@ -110,7 +109,7 @@ footer {
   }
   
   nav ul li a:hover {
-    background: #0f6478;
+    background: #40128B;
   }
   
   main {
@@ -119,7 +118,7 @@ footer {
   }
   
   footer {
-    background: #388ea0;
+    background: #9336B4;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
