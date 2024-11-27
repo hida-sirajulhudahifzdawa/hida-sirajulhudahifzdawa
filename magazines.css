@@ -1,126 +1,167 @@
+/* General Body Styling */
 body {
-    font-family: Anek Malayalam, sans-serif;
+    font-family: 'Anek Malayalam', sans-serif;
     background: #fff0e5;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
+}
+
+/* Header Styling */
+header {
     background: #5B99C2;
     color: white;
     padding: 10px 0;
-  }
-  
-  /* Footer Styling */
-footer {
-    margin-top: 50px;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
     font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #1A4870;
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+main {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
     color: #555;
-    padding: 20px 850px;
+    padding: 15px 10px;
     background-color: #f1f1f1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Social Media Icons */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 15px;
-}
-
-/* Social Icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 15px;
+    gap: 15px;
+    margin: 15px 0;
 }
 
 .social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
-/* Unique Colors on Hover or Touch */
-.social-icon.instagram:hover, .social-icon.instagram:active {
+/* Hover Effects for Icons */
+.social-icon.instagram:hover {
     background-color: #9b004d; /* Instagram Pink */
 }
 
-.social-icon.youtube:hover, .social-icon.youtube:active {
+.social-icon.youtube:hover {
     background-color: #d80000; /* YouTube Red */
 }
 
-.social-icon.whatsapp:hover, .social-icon.whatsapp:active {
+.social-icon.whatsapp:hover {
     background-color: #00b643; /* WhatsApp Green */
 }
 
-.social-icon.facebook:hover, .social-icon.facebook:active {
+.social-icon.facebook:hover {
     background-color: #0060dd; /* Facebook Blue */
 }
 
-/* Icon Animation on Hover */
-.social-icon:hover img, .social-icon:active img {
+.social-icon:hover img {
     transform: scale(1.2); /* Slight zoom effect */
 }
 
-/* Specific Icons */
-.instagram {
-    background-color: #fcfcfc;
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 15px 10px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
+    }
 }
 
-.youtube {
-    background-color: #fcfcfc;
-}
+@media (max-width: 480px) {
+    header {
+        padding: 8px 0;
+    }
 
-.whatsapp {
-    background-color: #fcfcfc;
-}
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.facebook {
-    background-color: #fcfcfc;
-}
+    nav ul li {
+        margin: 3px 0;
+    }
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-  }
-  
-  nav ul li a:hover {
-    background: #1A4870;
-  }
-  
-  main {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer {
-    background: #5B99C2;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 10px;
-  }
-  
+    nav ul li a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 10px 5px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-icon img {
+        width: 18px;
+        height: 18px;
+    }
+}
