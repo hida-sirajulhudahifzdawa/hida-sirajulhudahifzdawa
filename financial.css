@@ -414,11 +414,27 @@ body {
   }
   
   header {
-    background: #00aa39;
-    color: white;
-    text-align: center;
-    padding: 10px 578px;
-  }
+    background: #00aa39; /* Same green background */
+    color: white; /* White text color */
+    text-align: center; /* Center-align content */
+    padding: 10px 20px; /* Balanced padding for readability */
+    width: 100%; /* Ensure full-width header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px; /* Smaller padding for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 8px 10px; /* Compact padding for mobile */
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
   
   nav ul {
     list-style: none;
