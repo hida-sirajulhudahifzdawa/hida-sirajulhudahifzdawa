@@ -167,9 +167,10 @@ main {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: Anek Malayalam, sans-serif;
+    margin: 10px;
     padding: 0;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +184,7 @@ body {
 
 .hida-container h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 10px;
     font-weight: normal;
 }
 
@@ -193,7 +194,7 @@ body {
 
 .hida-container p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 6px;
     font-weight: lighter;
     color: #555;
 }
