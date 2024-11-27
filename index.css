@@ -10,9 +10,20 @@ body {
 header {
     background: #388ea0;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+/* Navigation Menu */
+nav {
+    position: relative;
 }
 
 nav ul {
@@ -32,12 +43,58 @@ nav ul li a {
     text-decoration: none;
     padding: 8px 12px;
     font-size: 14px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
     background: #0f6478;
     border-radius: 5px;
+    transform: scale(1.05);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.3s ease;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #388ea0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        text-align: center;
+    }
 }
 
 /* Main Content Styling */
@@ -105,46 +162,8 @@ footer {
     transform: scale(1.2); /* Slight zoom effect */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-wrap: wrap;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    footer {
-        font-size: 12px;
-        padding: 15px 10px;
-    }
-
-    .social-icon {
-        width: 35px;
-        height: 35px;
-    }
-
-    .social-icon img {
-        width: 20px;
-        height: 20px;
-    }
-}
-
+/* Responsive Adjustments */
 @media (max-width: 480px) {
-    header {
-        padding: 8px 0;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 3px 0;
-    }
-
     nav ul li a {
         font-size: 12px;
         padding: 6px 10px;
