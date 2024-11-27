@@ -273,6 +273,13 @@ footer {
         margin: 10px;
     }
 
+    header {
+    background: #00aa39;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    }
+    
     footer {
         padding: 10px;
         font-size: 10px;
