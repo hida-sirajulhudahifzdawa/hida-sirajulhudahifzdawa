@@ -57,6 +57,7 @@ nav ul li a:hover {
 }
 
 .hida-container {
+  font family: 'Anek Malayalam', San serif;
   text-align: center;
   padding: 20px;
 }
@@ -69,6 +70,23 @@ nav ul li a:hover {
 }
 
 .hida-container p {
+  font-size: 1rem;
+}
+
+.Sub-container {
+  font family: 'Anek Malayalam', San serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.Sub-container h1 {
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.Sub-container p {
   font-size: 1rem;
 }
 
