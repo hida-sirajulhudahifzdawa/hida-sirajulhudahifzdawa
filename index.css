@@ -63,6 +63,8 @@ nav ul li a:hover {
 
 .hida-container h1 {
   font-size: 2rem;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 10px;
 }
 
@@ -74,7 +76,7 @@ nav ul li a:hover {
   position: relative;
   width: 150px;
   height: 150px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 20px auto;
   background-color: #ddd;
   overflow: hidden;
