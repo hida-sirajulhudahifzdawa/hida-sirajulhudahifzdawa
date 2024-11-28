@@ -5,10 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hida-Sirajul Huda Hifz Da'wa</title>
   <link rel="stylesheet" href="index.css">
+  <style>
+    /* Styles for the navigation and header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #388ea0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .logo img {
+      max-height: 50px;
+    }
+
+    nav {
+      position: relative;
+    }
+
+    .menu {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      margin: 10px 0;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .hamburger {
+      display: flex;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    /* Responsive for smaller screens */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #f4f4f4;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 20px;
+        display: none;
+      }
+
+      .menu.show {
+        display: block;
+      }
+    }
+  </style>
 </head>
   <header>
     <div class="logo">
-      <a href="index.html"><img src="E:\pay\hidasirajulhudahifzdawa\assets/logo.png" alt="Website Logo"></a>
+      <a href="index.html"><img src="images/logo.png" alt="Website Logo"></a>
     </div>
     <nav>
       <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -26,7 +90,7 @@
   </header>
   <body>
     <div class="hida-container">
-        <h1><span class="hida-bold">HIDA</span> - Sirajul Huda Hifz Da'wa</h1>
+        <h1><span class="hida-bold">HIDA</span> - Students' Union of Sirajul Huda Hifz Da'wa</h1>
         <p>Nadapuram, Calicut, Kerala, 673 504</p>
     </div>
   </body>
@@ -49,6 +113,29 @@
     <p1>© Copyright Hida. All Rights Reserved<br>
     Designed by <a href="https://wa.me/8590771931" target="_blank" title="Visit Asim Kallad's Instagram">Asim Kallad</a></p1>
   </footer>
-  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show')
+    }
+    // JavaScript for the responsive menu
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector("nav ul");
+
+      // Toggle the menu visibility
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("show");
+    });
+
+      // Close the menu when a link is clicked (optional)
+      const menuLinks = document.querySelectorAll("nav ul li a");
+      menuLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("show");
+        });
+      });
+    });
+  </script>
 </body>
 </html>
