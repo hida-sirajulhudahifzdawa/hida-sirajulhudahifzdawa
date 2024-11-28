@@ -67,6 +67,7 @@ nav ul li a:hover {
   font-style: 'Anek Malayalam Light';
   line-height: 30px;
   font-size: 2rem;
+  padding-top: 50px;
   margin: 0;
 }
 
@@ -80,12 +81,12 @@ nav ul li a:hover {
 .sub-container {
   font-family: 'Anek Malayalam', sans-serif;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .sub-container h1 {
   font-style: Anek Malayalam Regular;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   margin: 0;
 }
 
