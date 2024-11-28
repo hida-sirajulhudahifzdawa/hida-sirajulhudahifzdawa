@@ -23,16 +23,17 @@ header {
 
 h1 {
   text-align: center;
-  font-family: 'Anek Malayalam Regular';
+  font-family: 'Anek Malayalam Light';
   padding-top: 50px;
-  line-height: 15px;
+  line-height: 17px;
 }
 
 p {
   text-align: center;
   font-family: 'Anek Malayalam Light';
-  font-size: 18px;
-  line-height: 0px;
+  font-size: 23px;
+  line-height: 10px;
+  letter-spacing: 0.5px;
 }
 
 p1 {
@@ -218,7 +219,7 @@ footer {
 
 /* Hover Effects for Icons */
 .social-icon.instagram:hover {
-  background-color: #9b004d; /* Instagram Pink */
+  background-color: #b30059; /* Instagram Pink */
 }
 
 .social-icon.youtube:hover {
