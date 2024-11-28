@@ -111,6 +111,7 @@ nav ul li a:hover {
 
 .image-box img {
   justify-content: center;
+  justify-items: center;
   width: 75%;
   height: 75%;
 }
