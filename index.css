@@ -61,17 +61,16 @@ nav ul li a:hover {
   text-align: center;
   justify-content: center;
   padding: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .hida-container h1 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .hida-container p {
   font-size: 1rem;
+  margin-top: 5px; /* Adds a small space between the h1 and p */
 }
 
 .sub-container {
@@ -82,13 +81,12 @@ nav ul li a:hover {
 
 .sub-container h1 {
   font-size: 1.5rem;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .sub-container p {
   font-size: 0.5rem;
+  margin-top: 5px; /* Adds a small space between the h1 and p */
 }
 
 .image-box {
