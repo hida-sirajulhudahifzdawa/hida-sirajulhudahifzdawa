@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-  font-family: 'Anek Malayalam', sans-serif;
+  font-family: 'Anek Malayalam Light';
   background: #fff0e5;
   margin: 0;
   padding: 0;
@@ -57,20 +57,22 @@ nav ul li a:hover {
 }
 
 .hida-container {
-  font-family: 'Anek Malayalam', sans-serif;
+  font-family: 'Anek Malayalam';
   text-align: center;
   justify-content: center;
   padding: 20px;
 }
 
 .hida-container h1 {
-  font-style: Anek Malayalam Regular;
+  font-style: 'Anek Malayalam Light';
+  line-height: 30px;
   font-size: 2rem;
   margin: 0;
 }
 
 .hida-container p {
-  font-style: Anek Malayalam Light;
+  font-style: 'Anek Malayalam Light';
+  line-height: 20px;
   font-size: 1rem;
   margin-top: 0px; /* Adds a small space between the h1 and p */
 }
@@ -89,6 +91,7 @@ nav ul li a:hover {
 
 .sub-container p {
   font-style: Anek Malayalam Light;
+  line-height: 8px;
   font-size: 0.9rem;
   margin-top: 0px; /* Adds a small space between the h1 and p */
 }
@@ -117,8 +120,8 @@ nav ul li a:hover {
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 10px;
   text-align: center;
+  line-height: 18px;
   transform: translateY(100%);
   transition: transform 0.5s ease;
 }
@@ -133,7 +136,7 @@ nav ul li a:hover {
 }
 
 .image-description {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   text-align: center;
   margin: 2px;
 }
@@ -145,7 +148,7 @@ footer {
   font-size: 12px;
   color: white;
   padding: 15px 10px;
-  background-color: #388ea0;
+  background-color: #222222;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -164,7 +167,7 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  background-color: #fff0e5;
+  background-color: #353535;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
