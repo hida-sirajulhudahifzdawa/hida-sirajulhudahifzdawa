@@ -70,7 +70,7 @@ nav ul li a:hover {
 
 .hida-container p {
   font-size: 1rem;
-  margin-top: 5px; /* Adds a small space between the h1 and p */
+  margin-top: 0px; /* Adds a small space between the h1 and p */
 }
 
 .sub-container {
@@ -86,7 +86,7 @@ nav ul li a:hover {
 
 .sub-container p {
   font-size: 0.5rem;
-  margin-top: 5px; /* Adds a small space between the h1 and p */
+  margin-top: 0px; /* Adds a small space between the h1 and p */
 }
 
 .image-box {
