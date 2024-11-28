@@ -64,11 +64,13 @@ nav ul li a:hover {
 }
 
 .hida-container h1 {
+  font-style: Anek Malayalam Regular;
   font-size: 2rem;
   margin: 0;
 }
 
 .hida-container p {
+  font-style: Anek Malayalam Light;
   font-size: 1rem;
   margin-top: 0px; /* Adds a small space between the h1 and p */
 }
@@ -80,11 +82,13 @@ nav ul li a:hover {
 }
 
 .sub-container h1 {
+  font-style: Anek Malayalam Regular;
   font-size: 1.6rem;
   margin: 0;
 }
 
 .sub-container p {
+  font-style: Anek Malayalam Light;
   font-size: 0.9rem;
   margin-top: 0px; /* Adds a small space between the h1 and p */
 }
