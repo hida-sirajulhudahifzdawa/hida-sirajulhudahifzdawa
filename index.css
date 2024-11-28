@@ -72,16 +72,18 @@ nav ul li a:hover {
 
 .image-box {
   position: relative;
-  width: 150px;
+  width: 100px;
+  height: 100px;
   margin: 20px auto;
   background-color: #ddd;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .image-box img {
   width: 100%;
+  height: 100%;
 }
 
 .image-box .details {
@@ -95,6 +97,11 @@ nav ul li a:hover {
   text-align: center;
   transform: translateY(100%);
   transition: transform 0.5s ease;
+}
+
+.image-box:hover {
+  width: 150px;
+  height: 130px;
 }
 
 .image-box:hover .details {
