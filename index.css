@@ -60,12 +60,12 @@ nav ul li a:hover {
   font-family: 'Anek Malayalam', sans-serif;
   text-align: center;
   padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .hida-container h1 {
   font-size: 2rem;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-bottom: 10px;
 }
 
