@@ -94,7 +94,7 @@ nav ul li a:hover {
   width: 150px;
   height: 150px;
   border-radius: 20px;
-  margin: 20px auto;
+  margin: 15px auto;
   background-color: #ddd;
   overflow: hidden;
   cursor: pointer;
@@ -131,6 +131,7 @@ nav ul li a:hover {
 .image-description {
   font-size: 0.9rem;
   text-align: center;
+  margin: 5px;
 }
 
 /* Footer */
