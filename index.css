@@ -110,7 +110,7 @@ nav ul li a:hover {
 }
 
 .image-box img {
-  align-items: center;
+  justify-content: center;
   width: 75%;
   height: 75%;
 }
@@ -131,6 +131,7 @@ nav ul li a:hover {
 .image-box:hover {
   width: 250px;
   height: 200px;
+  
 }
 
 .image-box:hover .details {
