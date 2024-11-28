@@ -3,91 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hida-Sirajul Huda Hifz Da'wa</title>
+  <title>Hida - Sirajul Huda Hifz Da'wa</title>
   <link rel="stylesheet" href="index.css">
-  <style>
-    /* Responsive HIDA text */
-    .hida-container {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .hida-container h1 {
-      font-size: 2rem;
-      line-height: 1.4;
-      margin-bottom: 10px;
-    }
-
-    .hida-container p {
-      font-size: 1rem;
-      line-height: 1.2;
-    }
-
-    @media (max-width: 768px) {
-      .hida-container h1 {
-        font-size: 1.5rem;
-      }
-
-      .hida-container p {
-        font-size: 0.9rem;
-      }
-    }
-
-        /* Image Boxes */
-    .box-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .image-box {
-      position: relative;
-      width: 50px;
-      height: 50px;
-      margin: 0 auto;
-      background-color: #ddd;
-      overflow: hidden;
-      cursor: pointer;
-      transition: all 0.5s ease;
-    }
-
-    .image-box.touched {
-      width: 75px;
-      height: 60px;
-      transition: width 0.5s ease, height 0.7s ease;
-    }
-
-    .image-box .details {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 10px;
-      text-align: center;
-      transform: translateY(100%);
-      transition: transform 0.5s ease;
-    }
-
-    .image-box.touched .details {
-      transform: translateY(0);
-    }
-
-    .image-description {
-      font-size: 0.9rem;
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-      .image-box {
-        width: 50px;
-        height: 50px;
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -108,23 +25,20 @@
       </ul>
     </nav>
   </header>
-  <div class="hida-container">
-    <h1><span class="hida-bold">HIDA</span> - Students' Union of Sirajul Huda Hifz Da'wa</h1>
-    <p>Nadapuram, Calicut, Kerala, 673 504</p>
-  </div>
 
-  <!-- Image Box Section -->
-  <div class="image-box">
-    <img src="images/sample.jpg" alt="Sample Image">
-    <div class="overlay">
-      <p>Detailed Text about the image goes here when hovered.</p>
+  <main>
+    <div class="hida-container">
+      <h1>HIDA - Students' Union of Sirajul Huda Hifz Da'wa</h1>
+      <p>Nadapuram, Calicut, Kerala, 673 504</p>
     </div>
-  </div>
-  <div class="image-description">
-    Small text describing the image.
-  </div>
 
-  <!-- Footer Section -->
+    <div class="image-box">
+      <img src="images/sample.jpg" alt="Sample Image">
+      <div class="details">Detailed Text about the image goes here when hovered.</div>
+    </div>
+    <div class="image-description">Small text describing the image.</div>
+  </main>
+
   <footer>
     <div class="social-icons">
       <a href="https://www.instagram.com/hida__sirajulhudahifzdawa/" target="_blank" class="social-icon instagram">
@@ -140,9 +54,9 @@
         <img src="images/fb.png" alt="Facebook">
       </a>
     </div>
-    <p1>© Copyright Hida. All Rights Reserved<br>
-      Designed by <a href="https://wa.me/8590771931" target="_blank" title="Visit Asim Kallad's Instagram">Asim Kallad</a></p1>
+    <p>© Hida. All Rights Reserved<br>Designed by <a href="https://wa.me/8590771931" target="_blank">Asim Kallad</a></p>
   </footer>
+
   <script>
     function toggleMenu() {
       const menu = document.getElementById('menu');
