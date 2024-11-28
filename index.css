@@ -80,12 +80,12 @@ nav ul li a:hover {
 }
 
 .sub-container h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 0;
 }
 
 .sub-container p {
-  font-size: 0.5rem;
+  font-size: 0.9rem;
   margin-top: 0px; /* Adds a small space between the h1 and p */
 }
 
@@ -94,7 +94,7 @@ nav ul li a:hover {
   width: 150px;
   height: 150px;
   border-radius: 20px;
-  margin: 10px auto;
+  margin: 7px auto;
   background-color: #ddd;
   overflow: hidden;
   cursor: pointer;
@@ -131,7 +131,7 @@ nav ul li a:hover {
 .image-description {
   font-size: 0.9rem;
   text-align: center;
-  margin: 5px;
+  margin: 2px;
 }
 
 /* Footer */
