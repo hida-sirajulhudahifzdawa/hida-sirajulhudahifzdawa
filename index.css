@@ -73,20 +73,20 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 
-.Sub-container {
+.sub-container {
   font-family: 'Anek Malayalam', sans-serif;
   text-align: center;
   padding: 20px;
 }
 
-.Sub-container h1 {
+.sub-container h1 {
   font-size: 1.5rem;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
-.Sub-container p {
+.sub-container p {
   font-size: 0.3rem;
 }
 
