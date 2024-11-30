@@ -26,14 +26,14 @@ header {
   left: 0;
   top: 0;
   height: 100%;
-  width: 250px; /* Adjust width as needed */
+  width: 250px;
   background-color: #388ea0;
   color: white;
   display: flex;
   flex-direction: column;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Ensure it stays above other elements */
+  z-index: 1000;
 }
 
 .side-nav ul {
@@ -64,15 +64,15 @@ header {
 /* Sidebar initially hidden */
 #side-nav {
   position: fixed;
-  left: -250px; /* Hidden off-screen */
+  left: -250px;
   top: 0;
   height: 100%;
   width: 250px;
   background-color: #388ea0;
   color: white;
   padding: 20px;
-  transition: left 0.3s ease; /* Smooth slide animation */
-  z-index: 1000; /* Above other content */
+  transition: left 0.3s ease;
+  z-index: 1000;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -103,334 +103,133 @@ header {
 
 /* Sidebar visible state */
 #side-nav.visible {
-  left: 0; /* Slide into view */
+  left: 0;
 }
 
 /* Prevent layout shifting */
 main {
-  margin-left: 0;
-  padding: 20px;
-  transition: none; /* No movement of main content */
-}
-
-/* Hamburger menu */
-.hamburger {
-  cursor: pointer;
-  font-size: 24px;
-  color: white;
-  padding: 10px;
-}
-
-@media (max-width: 768px) {
-  main {
-    margin-left: 0;
-  }
-}
-
-/* Adjust main content */
-main {
-  margin-left: 0;
-  transition: margin-left 0.3s ease;
-}
-
-[data-active="true"] ~ main {
-  margin-left: 250px;
-}
-
-/* Hamburger menu */
-.hamburger {
-  cursor: pointer;
-  font-size: 24px;
-  color: white;
-  padding: 10px;
-}
-
-@media (max-width: 768px) {
-  main {
-    margin-left: 0;
-  }
-}
-
-/* Adjust the main content to account for the side nav */
-main {
-  margin-left: 260px; /* Matches the width of the sidebar */
-  padding: 20px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .side-nav {
-    width: 200px;
-  }
-  main {
-    margin-left: 210px;
-  }
-}
-
-@media (max-width: 480px) {
-  .side-nav {
-    width: 150px;
-  }
-  main {
-    margin-left: 160px;
-  }
-}
-
-nav {
-  position: relative;
-}
-
-nav ul {
-  list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 12px;
-  font-size: 14px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-nav ul li a:hover {
-  background: #0f6478;
-  border-radius: 5px;
-  transform: scale(1.05);
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: white;
-}
-
-/* Font Changes */
-.hida-title {
-  font-family: 'Anek Malayalam Medium';
-}
-
-.hida-subtitle {
-  font-family: 'Anek Malayalam Light';
-}
-
-.hida-container {
-  font-family: 'Anek Malayalam';
-  text-align: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 20px;
-}
-
-.hida-container h1 {
-  font-style: 'Anek Malayalam Light';
-  line-height: 30px;
-  font-size: 2rem;
-  padding-top: 50px;
-  margin: 0;
-}
-
-.hida-container p {
-  font-style: 'Anek Malayalam Light';
-  line-height: 20px;
-  font-size: 1rem;
-  margin-top: 0px; /* Adds a small space between the h1 and p */
-}
-
-.sub-container {
-  font-family: 'Anek Malayalam', sans-serif;
   text-align: center;
-  padding: 10px;
 }
 
-.sub-container h1 {
-  font-style: Anek Malayalam Regular;
-  font-size: 1.9rem;
-  margin: 0;
-}
-
-.sub-container p {
-  font-style: Anek Malayalam Light;
-  line-height: 8px;
-  font-size: 0.9rem;
-  margin-top: 0px; /* Adds a small space between the h1 and p */
+/* Image Grid adjustments */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .image-box {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 20px;
-  margin: 7px auto;
   background-color: #f5f5f5;
   overflow: hidden;
-  cursor: pointer;
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Horizontal alignment */
-  align-items: center; /* Vertical alignment */
-  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: സെന്റർ
+
+  /* Image Box Styling */
+.image-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .image-box img {
-  width: 75%;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure the image fits within the box */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
-.image-box .details {
+.details {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
+  width: 100%;
+  padding: 10px;
   text-align: center;
-  line-height: 18px;
-  transform: translateY(100%);
-  transition: transform 0.5s ease;
-}
-
-.image-box:hover {
-  width: 250px;
-  height: 200px;
-  
-}
-
-.image-box:hover .details {
-  transform: translateY(0);
+  font-size: 14px;
 }
 
 .image-description {
-  font-size: 1.3rem;
   text-align: center;
-  margin: 2px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
 }
 
-/* Footer */
+/* Subcontainer Styling */
+.sub-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.sub-container h1 {
+  font-size: 36px;
+  color: #388ea0;
+  margin: 10px 0;
+}
+
+.sub-container p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Footer Styling */
 footer {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 12px;
+  background-color: #388ea0;
   color: white;
-  padding: 15px 10px;
-  background-color: #222222;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  position: relative;
 }
 
-/* Social Media Icons */
-.social-icons {
+footer .social-icons {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin: 15px 0;
+  margin-bottom: 10px;
 }
 
-.social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+footer .social-icon {
   width: 40px;
   height: 40px;
-  border-radius: 8px;
-  background-color: #353535;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icon img {
-  width: 25px;
-  height: 25px;
+footer .social-icon img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  transition: transform 0.3s ease;
 }
 
-/* Hover Effects for Icons */
-.social-icon.instagram:hover {
-  background-color: #b30059; /* Instagram Pink */
+footer p {
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-.social-icon.youtube:hover {
-  background-color: #d80000; /* YouTube Red */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.social-icon.whatsapp:hover {
-  background-color: #00b643; /* WhatsApp Green */
-}
-
-.social-icon.facebook:hover {
-  background-color: #0060dd; /* Facebook Blue */
-}
-
-.social-icon:hover img {
-  transform: scale(1.2); /* Slight zoom effect */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 480px) {
-  nav ul li a {
-      font-size: 12px;
-      padding: 6px 10px;
-  }
-
-  footer {
-      font-size: 10px;
-      padding: 10px 5px;
-  }
-
-  .social-icon {
-      width: 30px;
-      height: 30px;
-  }
-
-  .social-icon img {
-      width: 18px;
-      height: 18px;
-  }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background: #388ea0;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  .hida-container h1 {
-    font-size: 1.5rem;
-  }
-
-  .hida-container p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .social-icon img {
-    width: 30px;
-    height: 30px;
-  }
-
-  footer {
-    font-size: 10px;
-  }
+footer a:hover {
+  text-decoration: underline;
 }
