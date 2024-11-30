@@ -99,9 +99,9 @@
   <script>
   function toggleMenu() {
     const sideNav = document.getElementById('side-nav');
-    const isActive = sideNav.getAttribute('data-active') === 'true';
-    sideNav.setAttribute('data-active', !isActive); // Toggle active state
+    sideNav.classList.toggle('visible');
+    sideNav.classList.toggle('hidden');
   }
-  </script>
+</script>
 </body>
 </html>
