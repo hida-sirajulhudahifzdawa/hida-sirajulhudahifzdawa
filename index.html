@@ -9,24 +9,24 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.png" alt="Website Logo"></a>
-    </div>
-    <nav>
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <nav class="side-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="financial.html">Financial Hida</a></li>
-      <li><a href="furqan.html">Furqan</a></li>
-      <li><a href="art_gala.html">Art Gala</a></li>
-      <li><a href="pendrive.html">Pendrive</a></li>
-      <li><a href="magazines.html">Magazines</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    </nav>
-  </header>
+  <div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="Website Logo"></a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<nav id="side-nav" data-active="false">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="financial.html">Financial Hida</a></li>
+    <li><a href="furqan.html">Furqan</a></li>
+    <li><a href="art_gala.html">Art Gala</a></li>
+    <li><a href="pendrive.html">Pendrive</a></li>
+    <li><a href="magazines.html">Magazines</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
 
   <main>
     <div class="hida-container">
@@ -97,10 +97,11 @@
   </footer>
 
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      menu.classList.toggle('show');
-    }
+  function toggleMenu() {
+    const sideNav = document.getElementById('side-nav');
+    const isActive = sideNav.getAttribute('data-active') === 'true';
+    sideNav.setAttribute('data-active', !isActive); // Toggle active state
+  }
   </script>
 </body>
 </html>
