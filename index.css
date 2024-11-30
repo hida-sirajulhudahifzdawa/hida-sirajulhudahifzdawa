@@ -20,6 +20,72 @@ header {
   max-height: 50px;
 }
 
+/* Side Navigation Styles */
+.side-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 250px; /* Adjust width as needed */
+  background-color: #388ea0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.side-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-nav ul li {
+  margin-bottom: 20px;
+}
+
+.side-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.side-nav ul li a:hover {
+  background-color: #0f6478;
+  transform: scale(1.05);
+}
+
+/* Adjust the main content to account for the side nav */
+main {
+  margin-left: 260px; /* Matches the width of the sidebar */
+  padding: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .side-nav {
+    width: 200px;
+  }
+  main {
+    margin-left: 210px;
+  }
+}
+
+@media (max-width: 480px) {
+  .side-nav {
+    width: 150px;
+  }
+  main {
+    margin-left: 160px;
+  }
+}
+
 nav {
   position: relative;
 }
