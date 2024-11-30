@@ -61,26 +61,19 @@ header {
   transform: scale(1.05);
 }
 
-/* Sidebar hidden state */
+/* Sidebar initially hidden */
 #side-nav {
   position: fixed;
-  left: -250px; /* Hidden by default */
+  left: -250px; /* Hidden off-screen */
   top: 0;
   height: 100%;
   width: 250px;
   background-color: #388ea0;
   color: white;
-  display: flex;
-  flex-direction: column;
   padding: 20px;
+  transition: left 0.3s ease; /* Smooth slide animation */
+  z-index: 1000; /* Above other content */
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-  transition: left 0.3s ease; /* Smooth slide */
-  z-index: 1000;
-}
-
-/* Sidebar visible state */
-#side-nav[data-active="true"] {
-  left: 0; /* Visible */
 }
 
 #side-nav ul {
@@ -106,6 +99,32 @@ header {
 #side-nav ul li a:hover {
   background-color: #0f6478;
   transform: scale(1.05);
+}
+
+/* Sidebar visible state */
+#side-nav.visible {
+  left: 0; /* Slide into view */
+}
+
+/* Prevent layout shifting */
+main {
+  margin-left: 0;
+  padding: 20px;
+  transition: none; /* No movement of main content */
+}
+
+/* Hamburger menu */
+.hamburger {
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-left: 0;
+  }
 }
 
 /* Adjust main content */
