@@ -9,24 +9,24 @@
 </head>
 <body>
   <header>
-  <div class="logo">
-    <a href="index.html"><img src="images/logo.png" alt="Website Logo"></a>
-  </div>
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-</header>
-
-<nav id="side-nav" class="hidden">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="financial.html">Financial Hida</a></li>
-    <li><a href="furqan.html">Furqan</a></li>
-    <li><a href="art_gala.html">Art Gala</a></li>
-    <li><a href="pendrive.html">Pendrive</a></li>
-    <li><a href="magazines.html">Magazines</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Website Logo"></a>
+    </div>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav class="side-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="financial.html">Financial Hida</a></li>
+      <li><a href="furqan.html">Furqan</a></li>
+      <li><a href="art_gala.html">Art Gala</a></li>
+      <li><a href="pendrive.html">Pendrive</a></li>
+      <li><a href="magazines.html">Magazines</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    </nav>
+  </header>
 
   <main>
     <div class="hida-container">
@@ -53,7 +53,7 @@
       <div class="image-description">ART GALA</div>
 
       <div class="image-box">
-        <img src="images/language-icon.png" alt="Sample Image">
+        <img src="images/Magazine.png" alt="Sample Image">
         <div class="details">Lingsphere is a sub-committee under HIDA to promote positive linguistic development among students.</div>
       </div>
       <div class="image-description">LINGSPHERE</div>
@@ -97,11 +97,10 @@
   </footer>
 
   <script>
-  function toggleMenu() {
-    const sideNav = document.getElementById('side-nav');
-    sideNav.classList.toggle('visible');
-    sideNav.classList.toggle('hidden');
-  }
-</script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
