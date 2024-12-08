@@ -32,34 +32,50 @@ header {
 }
 
 nav {
-  position: relative;
+/* Side Navigation */
+#side-nav {
+  position: fixed;
+  left: -250px; /* Hidden off-screen */
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #388ea0;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
-nav ul {
+#side-nav ul {
   list-style: none;
-  display: flex;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-nav ul li {
-  margin: 0 5px;
+#side-nav ul li {
+  margin-bottom: 20px;
 }
 
-nav ul li a {
+#side-nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 8px 12px;
-  font-size: 14px;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: block;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-nav ul li a:hover {
-  background: #0f6478;
-  border-radius: 5px;
+#side-nav ul li a:hover {
+  background-color: #0f6478;
   transform: scale(1.05);
 }
 
+/* Side Navigation visible */
+#side-nav.visible {
+  left: 0;
+}
 .hamburger {
   display: none;
   cursor: pointer;
