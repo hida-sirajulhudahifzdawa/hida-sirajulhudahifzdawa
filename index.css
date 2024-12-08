@@ -19,7 +19,7 @@ header {
 /* Font Changes */
 .hida-title {
   font-family: 'Anek Malayalam', sans-serif;
-  font-weight: 500; /* Medium */
+  font-weight: 700; /* Medium */
 }
 
 .hida-subtitle {
@@ -130,6 +130,8 @@ nav ul li a:hover {
 }
 
 .image-box .details {
+  font-family: 'Anek Malayalam', sans-serif;
+  font-weight: 500; /* Light */
   position: absolute;
   bottom: 0;
   left: 0;
