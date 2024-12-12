@@ -160,6 +160,23 @@ nav ul li a:hover {
   margin: 2px;
 }
 
+.image-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to a new line for smaller screens */
+  justify-content: center; /* Centers the content horizontally */
+  gap: 10px; /* Space between the boxes */
+  margin: 20px auto;
+  max-width: 1200px; /* Optional: Limit the grid's width */
+}
+
+/* Optional: For smaller screens */
+@media (max-width: 768px) {
+  .image-grid {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+}
+
 /* Footer */
 footer {
   margin-top: 20px;
